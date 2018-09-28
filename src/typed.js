@@ -1,13 +1,10 @@
 import { LitElement, html } from '@polymer/lit-element';
+import Typed from 'typed.js';
 
 class TypedJS extends LitElement {
-    constructor() {
-        super();
-    }
-
     static get properties() {
         return {
-            strings: {type: Array},
+            strings: {type: String},
             stringsElement: {type: String},
             typeSpeed: {type: Number},
             startDelay: {type: Number},
@@ -29,9 +26,35 @@ class TypedJS extends LitElement {
         }
     }
 
-    render(properties) {
+    constructor() {
+        super();
+    }
+
+    render() {
+        new Typed(this.querySelector('.typed-text'), { 
+           strings: this.strings.split(',') || '',
+           stringsElement: this.stristringsElementngs || null,
+           typeSpeed: this.typeSpeed || 50,
+           startDelay: this.startDelay || 0,
+           backSpeed: this.backSpeed || 0,
+           smartBackspace: this.smartBackspace || true,
+           shuffle: this.shuffle || false,
+           backDelay: this.backDelay || 700,
+           fadeOut: this.fadeOut || false,
+           fadeOutClass: this.fadeOutClass || false,
+           fadeOutDelay: this.fadeOutDelay || false,
+           loop: this.loop || false,
+           loopCount: this.loopCount || Infinity,
+           showCursor: this.showCursor || true,
+           cursorChar: this.cursorChar || '|',
+           autoInsertCss: this.autoInsertCss || true,
+           attr: this.attr || null,
+           bindInputFocusEvents: this.bindInputFocusEvents || false,
+           contentType: this.contentType || 'html',
+        });     
+
         return html`
-        <div><slot></slot></div>
+            <slot></slot>
         `;
     }
 }

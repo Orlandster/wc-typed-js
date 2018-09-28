@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/Orlandster/wc-typed-js#readme",
   "dependencies": {
-    "@polymer/lit-element": "^0.6.1"
+    "@polymer/lit-element": "^0.6.1",
+    "typed.js": "^2.0.9"
   },
   "devDependencies": {
     "polyserve": "^0.27.12",
