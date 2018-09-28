@@ -1,0 +1,34 @@
+{
+  "name": "wc-typed-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orlandster/wc-typed-js.git"
+  },
+  "keywords": [
+    "typed.js",
+    "web",
+    "component",
+    "typing",
+    "animation"
+  ],
+  "author": "Orlandster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Orlandster/wc-typed-js/issues"
+  },
+  "homepage": "https://github.com/Orlandster/wc-typed-js#readme",
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.1"
+  },
+  "devDependencies": {
+    "polyserve": "^0.27.12",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  }
+}
