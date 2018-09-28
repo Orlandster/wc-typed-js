@@ -1,7 +1,7 @@
 import { LitElement, html } from '@polymer/lit-element';
 import Typed from 'typed.js';
 
-class TypedJS extends LitElement {
+export class TypedJS extends LitElement {
     static get properties() {
         return {
             strings: {type: String},
@@ -31,7 +31,7 @@ class TypedJS extends LitElement {
     }
 
     render() {
-        new Typed(this.querySelector('.typed-text'), { 
+        new Typed(this.querySelector('.typing'), { 
            strings: this.strings.split(',') || '',
            stringsElement: this.stristringsElementngs || null,
            typeSpeed: this.typeSpeed || 50,
