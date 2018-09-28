@@ -1,5 +1,23 @@
 # wc-typed-js - The Typed.js Web Component
 
+[![npm](https://img.shields.io/npm/v/wc-typed-js.svg) ![npm](https://img.shields.io/npm/dm/wc-typed-js.svg)](https://www.npmjs.com/package/wc-typed-js)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/wc-typed-js)
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="index.html">
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<wc-typed-js strings="Text number 1, Text number 2">
+  <h1>Fixed Text: <span class="typing"></span></h1>  
+</wc-typed-js>
+```
+
 The Typed.js Web Component for better reusability.
 
 Typed.js is a library that types. Enter in any string, and watch it type at the speed you've set, backspace what it's typed, and begin a new sentence for however many strings you've set.
