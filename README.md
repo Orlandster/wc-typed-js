@@ -1,4 +1,4 @@
-# vue-typed-js
+# wc-typed-js - The Typed.js Web Component
 
 The Typed.js Web Component for better reusability.
 
