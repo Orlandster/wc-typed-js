@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "polyserve",
+    "webpack": "webpack --config webpack.conf.js",
+    "start": "npm run-script webpack && npm run-script serve"
   },
   "repository": {
     "type": "git",
